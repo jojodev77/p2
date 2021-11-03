@@ -7,19 +7,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Simple brute force implementation
- *
- */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	private String filepath;
 	
 	/**
-	 * 
+	 * Constructor
 	 * @param filepath
 	 * @throws FileNotFoundException
-	 * Vérification de la présence du fichier
+	 *  constructor and Checking the presence of the file
 	 */
 	public ReadSymptomDataFromFile (String filepath) throws FileNotFoundException {
 		if (filepath == null) {
@@ -30,8 +26,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	
 	/**
 	 * @author j.de-la-osa
-	 * @throws IOException
-	 * active la lecture du fichier et renvoi le resultat
+	 * @return Reading the file and returning the result
 	 * 
 	 */
 	@Override
